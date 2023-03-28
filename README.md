@@ -1,4 +1,4 @@
-#Daniel Prussia's Profile
+##Daniel Prussia's Profile
 This is a React profile that includes a navigation bar, header, and portfolio page. The navigation bar allows the user to switch between different sections of the webpage. The header includes a slideshow of images with a fading transition and a description above it. The portfolio page includes a header, a section for content, and a footer.
 
 #Getting Started
