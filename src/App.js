@@ -19,6 +19,7 @@ function App() {
       {currentPage === 'Home' && <Header />}
       {currentPage === 'Portfolio' && <Portfolio />}
       {currentPage === 'Resume' && <Resume />}
+      
     </div>
    );
 }

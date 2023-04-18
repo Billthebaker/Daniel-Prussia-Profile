@@ -6,11 +6,11 @@ function NavBar({ currentPage, handlePageChange }) {
       <ul className="nav-list">
         <li>
           <a
-            href="#about-me"
-            className={`nav-link ${currentPage === "About Me" && "active"}`}
-            onClick={() => handlePageChange("About Me")}
+            href="/"
+            className={`nav-link ${currentPage === "home" && "active"}`}
+            onClick={() => handlePageChange("home")}
           >
-            About Me
+            Home
           </a>
         </li>
         <li>
