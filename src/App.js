@@ -5,6 +5,7 @@ import Portfolio from './pages/Portfolio';
 import { useState } from 'react';
 import Resume from './pages/Resume'
 import './App.css';
+import Footer from './components/Footer'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -19,7 +20,7 @@ function App() {
       {currentPage === 'Home' && <Header />}
       {currentPage === 'Portfolio' && <Portfolio />}
       {currentPage === 'Resume' && <Resume />}
-      
+      <Footer />
     </div>
    );
 }

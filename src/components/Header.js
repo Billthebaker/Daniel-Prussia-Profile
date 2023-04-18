@@ -33,6 +33,12 @@ function Header() {
   return (
     <div className="header">
       <h2 className="description">WELCOME TO THE JUNGLE WE GOT FUN AND GAMES</h2>
+      <li className="listText">Welcome to the profile this is where i put the about me stuff and all that
+      </li>
+      <li className="listText">i put my edumucationz here, and how i am a super fire shadowpriest, challenger season 1 wrath classic</li>
+      <li className="listText">maybe something extra? make the page look more filled out, 3 bulletins on the list at least.</li>
+      <li className="listText">one more why not right? NOTE: 16 words per line (we'll figure that one out)</li>
+
       {images.map((image, index) => (
         <img
           key={index}
@@ -41,6 +47,7 @@ function Header() {
           className={currentImageIndex === index ? "myPicture" : "myPicture fade"}
         />
       ))}
+      
     </div>
   );
 }
