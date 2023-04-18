@@ -1,5 +1,9 @@
 body {
+  background-image: url(./images/forest.jpg);
+  background-size: cover; /* Stretch the background image to cover the entire body element */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
   margin: 0;
+  color: aqua;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,7 +16,8 @@ code {
     monospace;
 }
 .navbar {
-  background-color: #004990;
+  background-image: url(./images/hazelwood.jpg);
+  background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,13 +39,20 @@ code {
 }
 
 .nav-list a {
-  color: white;
+  color: rgb(214, 11, 11);
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Shrikhand';
 }
+@font-face {
+  font-family: "Baskerville";
+  src: url("../src/components/NavBar.js") format("truetype"); /* Update the file path to the location of your Baskerville font file */
+}
+
 
 .nav-list a:hover {
   color: #267606;
