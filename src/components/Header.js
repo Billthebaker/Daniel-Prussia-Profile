@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import mypicture from "../images/THATSME.jpg"
+import picture from "../images/cartoonify.png"
+import picture2 from '../images/quizzinator.jpg'
 
 function Header() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -10,15 +12,15 @@ function Header() {
       alt: "Image 1",
     },
     {
-      src: "https://via.placeholder.com/600x400?text=Image+2",
+      src: picture,
       alt: "Image 2",
     },
     {
-      src: "https://via.placeholder.com/600x400?text=Image+3",
+      src: picture2,
       alt: "Image 3",
     },
   ];
-  // this is a slideshow function 
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex(
@@ -31,11 +33,14 @@ function Header() {
   return (
     <div className="header">
       <h2 className="description">WELCOME TO THE JUNGLE WE GOT FUN AND GAMES</h2>
-      <img
-        src={images[currentImageIndex].src}
-        alt={images[currentImageIndex].alt}
-        className="myPicture"
-      />
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image.src}
+          alt={image.alt}
+          className={currentImageIndex === index ? "myPicture" : "myPicture fade"}
+        />
+      ))}
     </div>
   );
 }
