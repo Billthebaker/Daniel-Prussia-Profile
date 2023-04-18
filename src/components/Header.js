@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import mypicture from "../images/THATSME.jpg"
 
 function Header() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
     {
-      src: "https://via.placeholder.com/600x400?text=Image+1",
+      src: mypicture,
       alt: "Image 1",
     },
     {
@@ -17,15 +18,15 @@ function Header() {
       alt: "Image 3",
     },
   ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex(
-        (currentImageIndex) => (currentImageIndex + 1) % images.length
-      );
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  // this is a slideshow function 
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentImageIndex(
+  //       (currentImageIndex) => (currentImageIndex + 1) % images.length
+  //     );
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div className="header">
