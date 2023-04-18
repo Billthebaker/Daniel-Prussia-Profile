@@ -19,14 +19,14 @@ function Header() {
     },
   ];
   // this is a slideshow function 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentImageIndex(
-  //       (currentImageIndex) => (currentImageIndex + 1) % images.length
-  //     );
-  //   }, 5000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(
+        (currentImageIndex) => (currentImageIndex + 1) % images.length
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="header">
@@ -34,7 +34,7 @@ function Header() {
       <img
         src={images[currentImageIndex].src}
         alt={images[currentImageIndex].alt}
-        className="slideshow-image"
+        className="myPicture"
       />
     </div>
   );
