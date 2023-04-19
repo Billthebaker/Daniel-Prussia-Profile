@@ -54,6 +54,13 @@ code {
 }
 
 
+.nav-link.active {
+  /* Add the styles for the active link here */
+  color: #fffb00; /* Set the color for the active link */
+}
+
+rgb(251, 255, 0)
+
 .nav-list a:hover {
   color: #267606;
   transform: scale(1.1);
@@ -106,4 +113,8 @@ code {
   width: 24px;
   height: 24px;
   margin-left: 16px;
+}
+
+.contact-content {
+  background-color:  rgba(30, 26, 106, 0.75);
 }

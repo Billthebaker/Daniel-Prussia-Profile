@@ -10,7 +10,7 @@ function NavBar({ currentPage, handlePageChange }) {
             className={`nav-link ${currentPage === "home" && "active"}`}
             onClick={() => handlePageChange("home")}
           >
-            home
+            Home
           </a>
         </li>
         <li>
