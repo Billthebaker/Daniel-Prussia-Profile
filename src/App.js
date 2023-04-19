@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Portfolio from './pages/Portfolio';
@@ -6,9 +5,10 @@ import { useState } from 'react';
 import Resume from './pages/Resume'
 import './App.css';
 import Footer from './components/Footer'
+import ContactMe from './pages/ContactMe';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('home');
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -17,12 +17,14 @@ function App() {
   return (
     <div className="App">
       <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
-      {currentPage === 'Home' && <Header />}
+      {currentPage === 'home' && <Header />}
       {currentPage === 'Portfolio' && <Portfolio />}
       {currentPage === 'Resume' && <Resume />}
+      {currentPage === 'ContactMe' && <ContactMe />}
+      
       <Footer />
     </div>
-   );
+  );
 }
 
 export default App;

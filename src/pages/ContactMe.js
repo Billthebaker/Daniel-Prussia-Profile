@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.css'
 
-function Resume() {
+function contactMe() {
   return (
     <div className="contactMe">
       <header className="contact-header">
-        <h2>fffff</h2>
+        <h2>Contact Me</h2>
       </header>
       <section className="contact-content">
         <p>welcome to good burger, home of the good burger, can i take your order?</p>
@@ -17,4 +17,4 @@ function Resume() {
   );
 }
 
-export default Resume;
+export default contactMe;
