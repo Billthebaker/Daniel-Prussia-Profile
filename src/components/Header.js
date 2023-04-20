@@ -1,53 +1,22 @@
-import React, { useState, useEffect } from "react";
-import mypicture from "../images/THATSME.jpg"
-import picture from "../images/cartoonify.png"
-import picture2 from '../images/quizzinator.jpg'
+import React from "react";
+import "../index.css"; // Import a CSS file to apply custom styles
+import thatsMeImage from "../images/THATSME.jpg"; // Import the image file
 
 function Header() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const images = [
-    {
-      src: mypicture,
-      alt: "Image 1",
-    },
-    {
-      src: picture,
-      alt: "Image 2",
-    },
-    {
-      src: picture2,
-      alt: "Image 3",
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex(
-        (currentImageIndex) => (currentImageIndex + 1) % images.length
-      );
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="header">
-      <h2 className="description">WELCOME TO THE JUNGLE WE GOT FUN AND GAMES</h2>
-      <li className="listText">Welcome to the profile this is where i put the about me stuff and all that
-      </li>
-      <li className="listText">i put my edumucationz here, and how i am a super fire shadowpriest, challenger season 1 wrath classic</li>
-      <li className="listText">maybe something extra? make the page look more filled out, 3 bulletins on the list at least.</li>
-      <li className="listText">one more why not right? NOTE: 16 words per line (we'll figure that one out)</li>
+      {/* Add the image to the left side */}
+      <img className="header-image" src={thatsMeImage} alt="That's Me!" />
 
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image.src}
-          alt={image.alt}
-          className={currentImageIndex === index ? "myPicture" : "myPicture fade"}
-        />
-      ))}
-      
+      <div className="header-content">
+        <h2 className="description">Daniel Prussia - About Me!</h2>
+        <p className="header-text"> Hello there! My name is Daniel Prussia and I am a recent graduate from Ohio State University, where I earned a certificate in Full Stack Web Development. I am a 29-year-old web developer based in Ohio, and I am thrilled to share a bit about myself with you.</p>
+        <p className="header-text">With a keen eye for detail and newfound understanding of front-end and back-end technologies, I am always eager to take on new challenges and expand my skillset. I have a meticulous attention to detail which drives me to constantly seek out new challenges and opportunities for skill growth.</p>
+        <p className="header-text">Aside from coding, I have a strong interest in history, archaeology and science. I find ancient history and astronomy particularly fascinating, as they offer insights into our past and the mysteries of the universe.
+
+        With my education, skills, and dedication to web development, I am committed to creating high-quality websites that deliver a seamless user experience and help clients achieve their goals. I am always looking for new opportunities to collaborate and make a meaningful impact in the world of web development. </p>
+        <p className="header-text">Thank you for taking the time to get to know me. I look forward to connecting with you and discussing how I can contribute to your web development needs!</p>
+      </div>
     </div>
   );
 }
