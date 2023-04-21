@@ -1,3 +1,45 @@
-.box{
-    color: aqua ;
+.fancy-font {
+  font-family: 'Your Fancy Font', sans-serif; /* Replace 'Your Fancy Font' with the name of the desired fancy font */
 }
+  
+.Portfolio-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .box {
+    width: calc(33.33% - 10px);
+    height: 200px; 
+    margin-bottom: 20px; 
+    background-size: cover;
+    background-position: center;
+
+    
+  }
+  
+  @media (max-width: 768px) {
+    .box {
+      width: 100%;
+    }
+  }
+
+  .box-text{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.80) ;
+    margin-top: 3%;
+ }
+
+ .repo-links{
+  color: rgb(30, 255, 0);
+    background-color: rgba(255, 0, 0, 0.35) ;
+    
+ }

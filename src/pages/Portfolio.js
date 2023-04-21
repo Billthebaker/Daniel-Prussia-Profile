@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.css';
-import image1 from '../images/THATSME.jpg';
+import image1 from '../images/quizzinator.jpg';
 import image2 from '../images/cartoonify.png';
-import image3 from '../images/lightbulbs.jpg';
-import image4 from '../images/sky.jpg';
-import image5 from '../images/spacebackground.jpg';
-import image6 from '../images/forest.jpg';
+import image3 from '../images/github.jpg';
+import image4 from '../images/texteditor.png';
+import image5 from '../images/socialmedia.jpg';
+import image6 from '../images/lazydater.jpg';
 
 function Portfolio() {
   // Define the image URLs for each box
@@ -23,24 +23,37 @@ function Portfolio() {
       </header>
       <section className="Portfolio-content">
         <div className="box-container">
-          <div className="box" style={{ backgroundImage: img1Url }}>
-            <p>Box 1</p>
-          </div>
-          <div className="box" style={{ backgroundImage: img2Url }}>
-            <p>Box 2</p>
-          </div>
-          <div className="box" style={{ backgroundImage: img3Url }}>
-            <p>Box 3</p>
-          </div>
-          <div className="box" style={{ backgroundImage: img4Url }}>
-            <p>Box 4</p>
-          </div>
-          <div className="box" style={{ backgroundImage: img5Url }}>
-            <p>Box 5</p>
-          </div>
-          <div className="box" style={{ backgroundImage: img6Url }}>
-            <p>Box 6</p>
-          </div>
+          <a href="https://quizzinator.herokuapp.com" className="box" style={{ backgroundImage: img1Url, textDecoration:'none' }}>
+            <p className='box-text fancy-font' style={{ }}>The Quizzinator</p>
+            <a href='https://github.com/danielprussia/Quizzinator' className='repo-links fancy-font'> Repo Link</a>
+            <p className='box-subtext fancy-font' style={{  }}></p>
+          </a>
+          
+          <a href="https://cartoonify-my-pic.herokuapp.com/" className="box" style={{ backgroundImage: img2Url, textDecoration:'none' }}>
+            <p className='box-text fancy-font' style={{  }}>Cartoonify My Pic</p>
+            <a href='https://github.com/danielprussia/cartoonify-my-pic' className='repo-links fancy-font'> Repo Link</a>
+            <p className='box-subtext fancy-font' style={{  }}></p>
+          </a>
+          <a href="https://github.com/danielprussia/Ecommerce-Backend" className="box" style={{ backgroundImage: img3Url, textDecoration:'none' }}>
+            <p className='box-text fancy-font' style={{ }}>E-Commerce Backend</p>
+            <a href='https://www.google.com' className='repo-links fancy-font'> </a>
+            <p className='box-subtext fancy-font' style={{  }}></p>
+          </a>
+          <a href="https://github.com/danielprussia/Text-Editor" className="box" style={{ backgroundImage: img4Url , textDecoration:'none'}}>
+            <p className='box-text fancy-font' style={{  }}>Text Editor</p>
+            <a href='https://www.google.com' className='repo-links fancy-font'> </a>
+            <p className='box-subtext fancy-font' style={{  }}></p>
+          </a>
+          <a href="https://github.com/danielprussia/Social-Media-Api" className="box" style={{ backgroundImage: img5Url, textDecoration:'none' }}>
+            <p className='box-text fancy-font' style={{  }}>Social Media Api</p>
+            <a href='https://www.google.com' className='repo-links fancy-font'> </a>
+            <p className='box-subtext fancy-font' style={{  }}></p>
+          </a>
+          <a href="https://danielprussia.github.io/The-Lazy-Dater/" className="box" style={{ backgroundImage: img6Url, textDecoration:'none' }}>
+            <p className='box-text fancy-font' style={{  }}>The Lazy Dater</p>
+            <a href='https://github.com/danielprussia/The-Lazy-Dater' className='repo-links fancy-font'>Repo Link</a>
+            <p className='box-subtext fancy-font' style={{ }}></p>
+          </a>
         </div>
       </section>
       <footer className="Portfolio-footer">
