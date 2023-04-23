@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Daniel-Prussia-Profile/static/css/main.a36d3d82.chunk.css",
+    "main.js": "/Daniel-Prussia-Profile/static/js/main.f916d69f.chunk.js",
+    "main.js.map": "/Daniel-Prussia-Profile/static/js/main.f916d69f.chunk.js.map",
+    "runtime-main.js": "/Daniel-Prussia-Profile/static/js/runtime-main.157c0933.js",
+    "runtime-main.js.map": "/Daniel-Prussia-Profile/static/js/runtime-main.157c0933.js.map",
+    "static/js/2.83fbb50b.chunk.js": "/Daniel-Prussia-Profile/static/js/2.83fbb50b.chunk.js",
+    "static/js/2.83fbb50b.chunk.js.map": "/Daniel-Prussia-Profile/static/js/2.83fbb50b.chunk.js.map",
+    "static/js/3.565a9a29.chunk.js": "/Daniel-Prussia-Profile/static/js/3.565a9a29.chunk.js",
+    "static/js/3.565a9a29.chunk.js.map": "/Daniel-Prussia-Profile/static/js/3.565a9a29.chunk.js.map",
+    "index.html": "/Daniel-Prussia-Profile/index.html",
+    "static/css/main.a36d3d82.chunk.css.map": "/Daniel-Prussia-Profile/static/css/main.a36d3d82.chunk.css.map",
+    "static/js/2.83fbb50b.chunk.js.LICENSE.txt": "/Daniel-Prussia-Profile/static/js/2.83fbb50b.chunk.js.LICENSE.txt",
+    "static/media/DanielPrussiaResume.pdf": "/Daniel-Prussia-Profile/static/media/DanielPrussiaResume.761d15ad.pdf",
+    "static/media/THATSME.32489580.jpg": "/Daniel-Prussia-Profile/static/media/THATSME.32489580.jpg",
+    "static/media/cartoonify.85fa0972.png": "/Daniel-Prussia-Profile/static/media/cartoonify.85fa0972.png",
+    "static/media/index.css": "/Daniel-Prussia-Profile/static/media/hazelwood.5ae37ea2.jpg",
+    "static/media/github.e704bdb2.jpg": "/Daniel-Prussia-Profile/static/media/github.e704bdb2.jpg",
+    "static/media/gmailicon.6137ed94.png": "/Daniel-Prussia-Profile/static/media/gmailicon.6137ed94.png",
+    "static/media/lazydater.38227671.jpg": "/Daniel-Prussia-Profile/static/media/lazydater.38227671.jpg",
+    "static/media/linkedin_logo.22eebdcb.jpg": "/Daniel-Prussia-Profile/static/media/linkedin_logo.22eebdcb.jpg",
+    "static/media/phones.087a1b7a.jpg": "/Daniel-Prussia-Profile/static/media/phones.087a1b7a.jpg",
+    "static/media/quizzinator.996ba3c1.jpg": "/Daniel-Prussia-Profile/static/media/quizzinator.996ba3c1.jpg",
+    "static/media/socialmedia.8c5b60be.jpg": "/Daniel-Prussia-Profile/static/media/socialmedia.8c5b60be.jpg",
+    "static/media/texteditor.75018262.png": "/Daniel-Prussia-Profile/static/media/texteditor.75018262.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.157c0933.js",
+    "static/js/2.83fbb50b.chunk.js",
+    "static/css/main.a36d3d82.chunk.css",
+    "static/js/main.f916d69f.chunk.js"
+  ]
+}
