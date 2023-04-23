@@ -1,67 +1,45 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './index.css';
+import image1 from '../images/phones.jpg';
+import image2 from '../images/gmailicon.png';
+import image3 from '../images/linkedin_logo.jpg';
 
-function ContactMe() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [formError, setFormError] = useState('');
 
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
 
-    // Validate form fields
-    if (!name || !email || !message) {
-      setFormError('All fields are required');
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      setFormError('Please enter a valid email address');
-    } else {
-      // Submit form data to backend or take further action
-      console.log('Form submitted:', name, email, message);
-      // Reset form fields
-      setName('');
-      setEmail('');
-      setMessage('');
-      setFormError('');
-    }
-  };
-
+function Portfolio() {
+  const img1Url = `url(${image1})`;
+  const img2Url = `url(${image2})`;
+  const img3Url = `url(${image3})`;
   return (
-    <div className="contactMe">
-      <header className="contact-header">
-        <h2>Contact</h2>
+    <div className="Portfolio">
+      <header className="Portfolio-header">
+        <h2>Contact Me!</h2>
       </header>
-      <section className="contact-content">
-        <form onSubmit={handleFormSubmit}>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-          <button type="submit">Submit</button>
-        </form>
-        {formError && <p className="error">{formError}</p>}
+      <section className="Portfolio-content">
+        <div className="box-container">
+          <a href="tel:234-926-6637" className="box" style={{ backgroundImage: img1Url, textDecoration:'none' }}>
+            <p className='box-text fancy-font' style={{ }}>Phone Number</p>
+            <p className='box-text fancy-font' style={{ }}>234-926-6637</p>
+            <p className='box-subtext fancy-font' style={{ textDecoration:'none' }}></p>
+          </a>
+          
+          <a href="mailto:danielprussia1@gmail.com" className="box" style={{ backgroundImage: img2Url, textDecoration:'none' }}>
+            <p className='box-text fancy-font' style={{  }}>E-mail Address</p>
+            <p className='box-text fancy-font' style={{  }}>danielprussia1@gmail.com</p>
+            <p className='box-subtext fancy-font' style={{  }}></p>
+          </a>
+          <a href="https://www.linkedin.com/in/daniel-prussia-545b44268/ " className="box" style={{ backgroundImage: img3Url, textDecoration:'none' }}>
+            <p className='box-text fancy-font' style={{ }}>Linkedin</p>
+            <a href='https://www.google.com' className='repo-links fancy-font'> </a>
+            <p className='box-subtext fancy-font' style={{textDecoration:'none', color:'white'   }}>Click Here!</p>
+          </a>          
+        </div>
       </section>
-      <footer className="contact-footer">
-        <p>Contact Footer</p>
+      <footer className="Portfolio-footer">
+        <p></p>
       </footer>
     </div>
   );
 }
 
-export default ContactMe;
+export default Portfolio;
