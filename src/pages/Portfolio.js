@@ -57,7 +57,7 @@ function Portfolio() {
         </div>
       </section>
       <footer className="Portfolio-footer">
-        <p>Thanks for visiting my portfolio!</p>
+        <p></p>
       </footer>
     </div>
   );
