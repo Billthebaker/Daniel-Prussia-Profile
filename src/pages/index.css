@@ -58,3 +58,82 @@
   color:rgb(38, 255, 0);
   background-color: rgb(13, 15, 82, 0.65);
 }
+.resume {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.resume-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #666;
+}
+
+.resume-section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.75em;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.proficiency-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.proficiency-item {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+.resume-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #999;
+}

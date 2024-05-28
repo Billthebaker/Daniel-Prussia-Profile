@@ -23,17 +23,6 @@ function Portfolio() {
       </header>
       <section className="Portfolio-content">
         <div className="box-container">
-          <a href="https://quizzinator.herokuapp.com" className="box" style={{ backgroundImage: img1Url, textDecoration:'none' }}>
-            <p className='box-text fancy-font' style={{ }}>The Quizzinator</p>
-            <a href='https://github.com/danielprussia/Quizzinator' className='repo-links fancy-font'> Repo Link</a>
-            <p className='box-subtext fancy-font' style={{  }}></p>
-          </a>
-          
-          <a href="https://cartoonify-my-pic.herokuapp.com/" className="box" style={{ backgroundImage: img2Url, textDecoration:'none' }}>
-            <p className='box-text fancy-font' style={{  }}>Cartoonify My Pic</p>
-            <a href='https://github.com/danielprussia/cartoonify-my-pic' className='repo-links fancy-font'> Repo Link</a>
-            <p className='box-subtext fancy-font' style={{  }}></p>
-          </a>
           <a href="https://github.com/danielprussia/Ecommerce-Backend" className="box" style={{ backgroundImage: img3Url, textDecoration:'none' }}>
             <p className='box-text fancy-font' style={{ }}>E-Commerce Backend</p>
             <a href='https://www.google.com' className='repo-links fancy-font'> </a>
