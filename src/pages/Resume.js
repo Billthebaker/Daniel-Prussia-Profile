@@ -14,6 +14,10 @@ function Resume() {
     'MongoDB',
     'MySql',
     'Third Party Api',
+    'Flutter',
+    'Dart',
+    'ADB (Android Debug Bridge)',
+    'Typescript',
     'ORM'
     // Add more proficiencies as needed
   ];
